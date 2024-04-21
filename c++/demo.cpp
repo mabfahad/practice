@@ -10,9 +10,13 @@ Age greater than 57, Retirement time now
 int main() {
     //Foor Loop
     string s = "Fahad";
-    for (int i = 1; i<= 10; i++) {
-        cout << i << "=" << s << endl;
-    }
+    int i = 1;
+
+    do
+    {
+         cout << i << "=" << s << endl;
+        i++;
+    } while (i <= 5);
     
     return 0;
 }

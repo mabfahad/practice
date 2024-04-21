@@ -3,8 +3,3 @@
 3=Fahad
 4=Fahad
 5=Fahad
-6=Fahad
-7=Fahad
-8=Fahad
-9=Fahad
-10=Fahad
