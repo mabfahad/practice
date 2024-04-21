@@ -8,10 +8,13 @@ Age greater than 57, Retirement time now
 */
 
 int main() {
-    int arr[2];
-    cin >> arr[0] >> arr[1];
+    string s = "Fahad";
 
-     cout << arr[0] << arr[1];
+     cout << s[0] << s[1];
+
+    int len = s.size();
+    cout << len << "\n";
+    cout << s[len -1];
     
     
     
