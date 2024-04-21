@@ -1,22 +1,36 @@
 #include<iostream>
 using namespace std;
 /*
-if age less than 18 not eligible for the job
-Age 18 to 55 , eligible for the job
-Age 56 to 57, eligible but retirement soon
-Age greater than 57, Retirement time now
+Functions
+Void
+Return
+Paramaterised
+Non Parametirsed
 */
 
-int main() {
-    //Foor Loop
-    string s = "Fahad";
-    int i = 1;
+void voidFunction() {
+    cout << "This is void function but non parameterised" << endl;
+}
 
-    do
-    {
-         cout << i << "=" << s << endl;
-        i++;
-    } while (i <= 5);
-    
-    return 0;
+void voidFunctionParameterised(string $a){
+    cout << "This is void but " << $a << endl;
+}
+
+// string returnFunction() {
+//     return "this is return function" << endl;
+// } 
+
+int getSumTwoNumbers(int num1, int num2) {
+    int num3 = num1 + num2;
+    return num3;
+}
+
+int main() {
+    voidFunction();
+    string a;
+    int num1,num2;
+    cin >> a >> num1 >> num2;
+    voidFunctionParameterised(a);
+    cout << getSumTwoNumbers(num1, num2);
+   return 0;
 }
