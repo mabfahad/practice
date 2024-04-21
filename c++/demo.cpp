@@ -8,23 +8,10 @@ Age greater than 57, Retirement time now
 */
 
 int main() {
-    int age;
-    cin >> age;
+    int arr[2];
+    cin >> arr[0] >> arr[1];
 
-    if (age < 18)
-    {
-        cout << "Not eligible for the job";
-    } else if (age <= 57)
-    {
-        cout << "Eligible for the job";
-        if (age >= 55)
-        {
-            cout << " , retirement soon!";
-        }
-        
-    } else {
-        cout << "Retirement Now!";
-    }
+     cout << arr[0] << arr[1];
     
     
     
