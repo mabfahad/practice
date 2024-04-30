@@ -1,3 +1,5 @@
-This is void function but non parameterised
-This is void but parameterised
-5
+*****
+****
+***
+**
+*
