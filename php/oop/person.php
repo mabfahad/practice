@@ -6,13 +6,13 @@ class Person
     public $age;
 
     const SPECIES = "Homo Sapiens";
-    public function __construct($name, $age)
+    public function __construct( $name, $age)
     {
         $this->name = $name;
         $this->age = $age;
     }
 
-    public function greet()
+    final function greet()
     {
         return "Hello, my name is " . $this->name . " and I am " . $this->age . " years old.";
     }
@@ -30,6 +30,10 @@ class Person
 
 class Boys extends Person
 {
+    function greet()
+    {
+
+    }
 
 }
 
