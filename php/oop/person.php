@@ -32,7 +32,12 @@ class Boys extends Person
 {
     function greet()
     {
-        return "Hello there! This is {$this->name} and my age is {$this->age}";
+        return "Hello there! This is {$this->name} and my age is {$this->age}.";
+    }
+
+    function conversation()
+    {
+        return "How are you {$this->name}?";
     }
 
 }
@@ -44,3 +49,4 @@ echo $person->display_constant();
 echo "<br>";
 $boys = new Boys("Fahad", 33);
 echo $boys->greet();
+echo $boys->conversation();
