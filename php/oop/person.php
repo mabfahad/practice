@@ -28,7 +28,15 @@ class Person
     }
 }
 
+class Boys extends Person
+{
+
+}
+
 $person = new Person("John", 30);
 echo $person->greet();
 echo "<br>";
 echo $person->display_constant();
+echo "<br>";
+$boys = new Boys("Fahad", 33);
+echo $boys->greet();
