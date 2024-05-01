@@ -51,3 +51,9 @@ $boys = new Boys("Fahad", 33);
 echo $boys->greet();
 echo $boys->conversation();
 //Polymorphism a system where a class is extended and the method in the child class can override the method of the parent class and the child class can create new methods which are not existed in the parent class.
+echo "<br>";
+if ($boys instanceof Person) {
+    echo "Yes, \$boys is an instance of Person class.";
+} else {
+    echo "No, \$boys is not an instance of Person class.";
+}
