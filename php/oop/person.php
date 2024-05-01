@@ -4,7 +4,6 @@ class Person
 {
     public $name;
     public $age;
-
     public function __construct($name, $age)
     {
         $this->name = $name;
@@ -18,7 +17,8 @@ class Person
 
     public function __destruct()
     {
-        echo "Person object is destroyed.";
+        unset($this->name);
+        unset($this->age);
     }
 }
 
