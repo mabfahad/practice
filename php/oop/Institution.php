@@ -5,7 +5,6 @@
  * When a class implements an interface, it must implement all the methods defined in the interface.
  * An interface is a contract that defines the methods that a class must implement.
  * An interface is declared using the interface keyword.
- * An interface can have constants, abstract methods, and default methods.
  * An interface cannot have properties.
  * An interface cannot have a constructor.
  * An interface cannot have a destructor.
