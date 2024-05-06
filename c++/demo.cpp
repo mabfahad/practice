@@ -9,19 +9,18 @@ Non Parametirsed
 */
 
 int main() {
-   int count;
-   cin >> count;
+   int num;
+   cin >> num;
    
-for (int i = 5; i < 0; i++)
+for (int i = 0; i < num; i++)
 {
-    for(int j=0; j= i-1; j++)
+    for (int j = 0; j <= i; j++)
     {
-        cout << " ";
+        cout << "*";
     }
-    cout << "*";
     cout << endl;
+    
 }
-
 
    
 
