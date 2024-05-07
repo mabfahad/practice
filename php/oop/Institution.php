@@ -31,3 +31,4 @@ $school->location = "Karachi";
 echo $school->getName();
 echo "<br>";
 echo $school->getLocation();
+echo "<br>";
