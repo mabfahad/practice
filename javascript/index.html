@@ -14,8 +14,9 @@
             isMarried: false
         };
 
-        var personDetails = Object.values(person);
-        console.log(personDetails);
+        for (let[key, value] of Object.entries(person)) {
+            console.log(`${key}: ${value}`);
+        }
     </script>
 </head>
 <body>
