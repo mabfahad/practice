@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        function changeText(testing) {
-            document.getElementById('test').innerHTML = testing;
+        function changeText(text) {
+            document.getElementById('test').innerHTML = text;
+        }
+
+        let person = {
+            name: 'John',
+            age: 30,
+            isMarried: false
+        };
+
+        for (let key in person) {
+            console.log(key + ' : ' + person[key]);
         }
     </script>
 </head>
 <body>
     <h1 id="test">This is test</h1>
     <button onclick="changeText('testing')">Click me</button>
-    <script src="script.js"></script>
 </body>
 </html>
