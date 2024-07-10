@@ -5,3 +5,6 @@ spl_autoload_register(function ($class_name) {
 
 $person = new Person();
 $person->display_person()->display_person_name('John Doe');
+
+$institution = new Institution();
+echo $institution->display_institution();
