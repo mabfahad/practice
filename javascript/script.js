@@ -17,3 +17,6 @@ console.log(li);
 
 if(li[1].innerHTML === 'Janee') console.log(li[1]);
     else console.log('False');
+
+let hello = () => console.log('Hello World!');
+hello();
