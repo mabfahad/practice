@@ -27,3 +27,12 @@ let hello2 = name => {
 }
 
 console.log(hello2('Fahad'));
+
+const foo = {
+    num:100,
+    logNum: () => {
+        console.log(foo.num);
+    }
+}
+
+foo.logNum();
