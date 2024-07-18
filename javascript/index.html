@@ -8,14 +8,17 @@
             document.getElementById('test').innerHTML = text;
         }
 
-        let person = {
-            name: 'John',
-            age: 30,
-            isMarried: false
-        };
+        let checkingAccount = {
+            name: 'Fahad',
+            balance:1000,
+            deposits:[200,400,300,100],
+            withdraw(amount) {
+                this.balance = this.balance - amount
+            }
+        }
 
-        var personDetails = JSON.stringify(person);
-        console.log(personDetails);
+        checkingAccount.withdraw(200);
+        console.log(checkingAccount);
     </script>
 </head>
 <body>
