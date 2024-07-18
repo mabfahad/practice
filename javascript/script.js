@@ -21,7 +21,7 @@ if(li[1].innerHTML === 'Janee') console.log(li[1]);
 let hello = () => console.log('Hello World!');
 hello();
 
-let hello2 = (name) => {
+let hello2 = name => {
     if(name === 'Fahad') console.log(`This is ${name}`);
     else console.log(name);
 }
