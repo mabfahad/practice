@@ -2,27 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script>
-        function changeText(text) {
-            document.getElementById('test').innerHTML = text;
-        }
-
-        let checkingAccount = {
-            name: 'Fahad',
-            balance:1000,
-            deposits:[200,400,300,100],
-            withdraw(amount) {
-                this.balance = this.balance - amount
-            }
-        }
-
-        checkingAccount.withdraw(200);
-        console.log(checkingAccount);
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js">
     </script>
 </head>
 <body>
-    <h1 id="test">This is test</h1>
-    <button onclick="changeText('testing')">Click me</button>
+    
 </body>
 </html>
