@@ -2,9 +2,18 @@ let person = {
     name:'Fahad',
     age: 33,
     isMarraid: true,
-    printDetails(name,age,isMarraid) {
-        return `this is ${name}. He is ${age} years old and married ${isMarraid}`;
+    printDetails() {
+        return `this is ${this.name}. He is ${this.age} years old and married ${this.isMarraid}`;
     }
 }
 
-console.log(person.printDetails('Fahad',33,false));
+let li = document.querySelectorAll('ul li');
+li[1].style.color = 'red';
+document.getElementById("title").innerHTML = "New text!";
+document.getElementById("myImage").src = "landscape.jpg";
+console.log(document.getElementById("myImage"));
+console.log(li);
+
+
+if(li[1].innerHTML === 'Janee') console.log(li[1]);
+    else console.log('False');
