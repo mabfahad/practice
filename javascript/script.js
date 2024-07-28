@@ -36,3 +36,7 @@ const foo = {
 }
 
 foo.logNum();
+
+let names = ['luis','john','jane'];
+let {firstnNme, middleName, lastName} = names
+console.log(firstnNme);
