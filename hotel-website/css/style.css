@@ -68,8 +68,8 @@ p {
 }
 
 .bg-primary {
-  background: #333;
-  color: #f7c08a;
+  color: #333;
+  background: #f7c08a;
 }
 
 /*naavbar*/
@@ -148,4 +148,15 @@ p {
 }
 #home-info .info-content p {
   padding-bottom: 30px;
+}
+/*features*/
+.box {
+  float: left;
+  width: 33.33%;
+  /* display: inline; */
+  padding: 60px;
+  text-align: center;
+}
+.box i {
+  margin-bottom: 10px;
 }
