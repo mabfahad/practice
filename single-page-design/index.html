@@ -77,7 +77,8 @@
     <div class="who-img"></div>
     <div class="who-text bg-dark p-2">
       <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi perferendis consectetur tempora quis saepe.</p>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi perferendis consectetur
+        tempora quis saepe.</p>
       <h3>Our Team</h3>
       <ul class="list">
         <li class="">Mark: CEO</li>
@@ -114,6 +115,57 @@
       </div>
     </div>
   </section>
+
+  <!--Contact-->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <h2 class="m-heading">
+        Contact Us
+      </h2>
+      <p>Please use the form below to contact us</p>
+
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+
+
+        <input type="submit" value="Send Message" class="btn btn-dark">
+      </form>
+
+    </div>
+    <!--AIzaSyCRMGhzW3Chseyd_RrJ92RSicr8vaeLVxI-->
+    <div id="map">
+
+    </div>
+
+  </section>
+
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2024, All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- prettier-ignore -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRMGhzW3Chseyd_RrJ92RSicr8vaeLVxI&loading=async&callback=initMap">
+    </script>
 </body>
 
 </html>
