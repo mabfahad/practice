@@ -10,3 +10,15 @@ async function initMap() {
 }
 
 initMap();
+
+//Smooth Scrolling
+jQuery(function(){
+   jQuery("#navbar a, .btn").on("click",function(event){
+    event.preventDefault();
+    const hash = this.hash;
+    jQuery('html,body').animate({
+      scrollTop: jQuery(hash).offset().top-100
+    },800);
+   });
+
+});
