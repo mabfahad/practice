@@ -1,0 +1,23 @@
+.item {
+  padding: 3rem;
+  border: #ccc 1px solid;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  /* margin: 1rem; */
+  border-radius: 5px;
+  background: #333;
+}
+.grid {
+  display: grid;
+  /* grid-template-columns: 200px auto 200px; */
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: repeat(2,auto); */
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-gap: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
