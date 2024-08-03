@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="grid_rows.css">
+  <title>Grid Rows</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+        'header header header'
+        'content content sidebar'
+        'box-1 box-2 box-3'
+      ;
+      grid-gap: 1rem;
+    }
+
+    .header {
+      grid-area: header;
+      padding: 50px 0;
+      text-align: center;
+      background: #333;
+      color: #f4f4f4;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .box-1 {
+      grid-row: box-1;
+    }
+
+    .box-2 {
+      grid-row: box-2;
+    }
+
+    .box-3 {
+      grid-row: box-3;
+    }
+
+    .content,
+    .sidebar,
+    .box-1,
+    .box-2,
+    .box-3 {
+      border: 1px solid #f1f1f1;
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1>My Website</h1>
+    </header>
+    <section class="content">
+      <h3>Welcome to My Site</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur, placeat odit laboriosam voluptas
+        autem libero, culpa in, excepturi fugit temporibus sit! Deleniti eveniet quia totam error, recusandae mollitia
+        quibusdam!</p>
+    </section>
+    <aside class="sidebar">
+      <h3>Contact US</h3>
+      <ul>
+        <li>Some Companyt</li>
+        <li>Some Companyt</li>
+        <li>Some Companyt</li>
+      </ul>
+    </aside>
+    <div class="box-1">
+      <h3>Box 1</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit qui itaque deleniti quisquam
+        consequuntur fugiat officia recusandae velit.</p>
+    </div>
+    <div class="box-2">
+      <h3>Box 2</h3>
+      <p>Blanditiis eveniet culpa quasi neque suscipit modi? Est accusamus aut qui, quos amet sequi distinctio odio ut
+        dolores!</p>
+    </div>
+    <div class="box-3">
+      <h3>Box 3</h3>
+      <p>Totam provident numquam, tempora atque asperiores magni fuga. Iste adipisci hic exercitationem, fugit nam
+        provident cumque voluptates doloremque?</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
