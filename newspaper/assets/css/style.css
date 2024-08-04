@@ -92,7 +92,7 @@ p{
 .btn-block {
   display: block;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 /*Utility*/
@@ -282,4 +282,17 @@ p{
 }
 #main-footer .footer-container input[type='submit']{
   width: 90%;
+}
+
+/* About Page */
+
+#about .page-container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+#about .page-container >*:first-child{
+  grid-row: 1 /span 3;
 }
