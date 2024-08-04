@@ -140,6 +140,14 @@ p{
 .p-2{padding: 2rem;}
 .p-3{padding: 3rem;}
 
+.list li{
+  padding: .5rem 0;
+  border-bottom: 1px dotted #555;
+  width: 90%;
+}
+.list li a:hover{
+  color: var(--primary-color) !important;
+}
 /* Navigation */
 #main-nav {
   background: #fff;
