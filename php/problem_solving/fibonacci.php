@@ -1,13 +1,15 @@
 <?php
 
-function fibonacci($number){
-    if($number == 0){
-        return 0;
+//check if a number is a fibonacci number
+function isFibonacci($number){
+    $a = 0;
+    $b = 1;
+    while($a < $number){
+        $c = $a + $b;
+        $a = $b;
+        $b = $c;
     }
-    if($number == 1){
-        return 1;
-    }
-    return fibonacci($number - 1) + fibonacci($number - 2);
+    return $a == $number;
 }
 
-echo fibonacci(5);
+echo isFibonacci(21) ? "Yes" : "No"; // Yes
