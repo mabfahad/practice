@@ -286,13 +286,18 @@ p{
 
 /* About Page */
 
-#about .page-container{
+.page-container{
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 1.5rem;
   margin: 2rem 0;
 }
 
-#about .page-container >*:first-child{
+.page-container >*:first-child{
   grid-row: 1 /span 3;
+}
+
+/*Article*/
+#article h1{
+  text-align: center;
 }
