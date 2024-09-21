@@ -1,42 +1,10 @@
-let person = {
-    name:'Fahad',
-    age: 33,
-    isMarraid: true,
-    printDetails() {
-        return `this is ${this.name}. He is ${this.age} years old and married ${this.isMarraid}`;
-    }
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  id: 5566,
+  fullName: function ($test) {
+    return this.firstName + ' ' + this.lastName + ' ' + $test
+  },
 }
-
-let li = document.querySelectorAll('ul li');
-li[1].style.color = 'red';
-document.getElementById("title").innerHTML = "New text!";
-document.getElementById("myImage").src = "landscape.jpg";
-console.log(document.getElementById("myImage"));
-console.log(li);
-
-
-if(li[1].innerHTML === 'Janee') console.log(li[1]);
-    else console.log('False');
-
-let hello = () => console.log('Hello World!');
-hello();
-
-let hello2 = name => {
-    if(name === 'Fahad') console.log(`This is ${name}`);
-    else console.log(name);
-}
-
-console.log(hello2('Fahad'));
-
-const foo = {
-    num:100,
-    logNum: () => {
-        console.log(foo.num);
-    }
-}
-
-foo.logNum();
-
-let names = ['luis','john','jane'];
-let {firstnNme, middleName, lastName} = names
-console.log(firstnNme);
+person.fullName = 'Md Abdullah Al Fahad'
+console.log(person)
