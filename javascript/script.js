@@ -1,10 +1,14 @@
-const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  id: 5566,
-  fullName: function ($test) {
-    return this.firstName + ' ' + this.lastName + ' ' + $test
-  },
+function Person(name, age) {
+  this.name = name
+  this.age = age
 }
-person.fullName = 'Md Abdullah Al Fahad'
-console.log(person)
+
+const foysal = new Person('Foysal Ahmed', 30)
+// foysal.country = 'BD'
+const rihan = new Person('Rihan', 31)
+
+Person.prototype.country = 'Soudi Arabia'
+
+console.log(foysal)
+console.log(rihan)
+console.log(foysal.country)
