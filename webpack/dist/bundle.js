@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("This is a function"),console.log("ABC")})();
