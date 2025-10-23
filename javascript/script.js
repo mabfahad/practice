@@ -13,3 +13,22 @@ while (i<arr.length) {
     console.log("dfdf"+arr[i])
     i++
 }
+
+const name = "Fahad";
+console.log(`Hello, ${name}!`);
+console.log(`This is ${name}`)
+
+let text = `I'm Md Abdullah Al Fahad`;
+
+console.log(text)
+
+let header = `Template String`
+let tags =['php','js','es6']
+
+let html = `<h2>${header}</h2><ul>`
+for (const x of tags) {
+    html += `<li>${x}</li>`
+}
+html += `</ul>`
+
+document.getElementById("practice").innerHTML = html
