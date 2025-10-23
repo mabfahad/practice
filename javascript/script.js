@@ -32,3 +32,6 @@ for (const x of tags) {
 html += `</ul>`
 
 document.getElementById("practice").innerHTML = html
+
+let arrowFunction = (a,b) => a*b
+console.log(arrowFunction(5,4))
